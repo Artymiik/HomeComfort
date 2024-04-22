@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Create";
+}
+
+<head>
+    <link rel="stylesheet" href="">
+</head>
+
+<header>
+    @await Html.PartialAsync("Home/_header");
+</header>
+
+<div class="form__create__application">
+    <form asp-action="Create" method="post">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </form>
+</div>

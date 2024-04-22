@@ -13,7 +13,6 @@ public class AccountController : Controller
     private readonly SignInManager<AppUser> _signInManager;
     private readonly UserManager<AppUser> _userManager;
 
-
     public AccountController(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager)
     {
         _signInManager = signInManager;

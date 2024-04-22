@@ -13,4 +13,5 @@ public class ApplicationDbContext : IdentityDbContext<AppUser>
     
     public DbSet<AppUser> AppUser { get; set; }
     public DbSet<Applications> Applications { get; set; }
+    public DbSet<Address> Addresses { get; set; }
 }
