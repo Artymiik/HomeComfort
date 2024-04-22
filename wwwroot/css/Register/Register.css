@@ -1,0 +1,86 @@
+.text-danger {
+  font-size: 11px;
+  color: red;
+  margin: 5px;
+}
+
+.text-danger-top {
+  font-size: 12px;
+  color: red;
+  margin: 5px 5px 20px;
+  list-style: none;
+  text-align: center;
+}
+
+#Register {
+  background-image: url("../../images/Login_Background.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#Register .container__register {
+  background: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 16px;
+  width: 280px;
+  text-align: center;
+}
+#Register .container__register .title__register {
+  margin: 0 0 20px;
+  font-weight: 600;
+  font-size: 27px;
+}
+#Register .container__register form {
+  display: flex;
+  flex-direction: column;
+}
+#Register .container__register form input {
+  padding: 12px;
+  font-family: "Nunito", sans-serif;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  margin-top: 15px;
+  font-size: 15px;
+}
+#Register .container__register form .flex__input {
+  display: flex;
+  align-items: center;
+}
+#Register .container__register form .flex__input .input__danger {
+  display: flex;
+  flex-direction: column;
+}
+#Register .container__register form .flex__input input {
+  width: 75%;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+#Register .container__register form .flex__input input:nth-child(1) {
+  margin-right: 120px;
+}
+#Register .container__register form button {
+  background: #0a53be;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  margin-top: 15px;
+}
+#Register .container__register form .down__span {
+  font-size: 12px;
+  color: black;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=Register.css.map */

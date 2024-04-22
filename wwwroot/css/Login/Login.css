@@ -1,0 +1,70 @@
+.text-danger {
+  font-size: 11px;
+  color: red;
+  margin: 5px;
+}
+
+.text-danger-top {
+  font-size: 12px;
+  color: red;
+  margin: 5px 5px 20px;
+  list-style: none;
+  text-align: center;
+}
+
+#Login {
+  background-image: url("../../images/Login_Background.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#Login .container__login {
+  background: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border-radius: 16px;
+  width: 280px;
+  text-align: center;
+}
+#Login .container__login .title__login {
+  margin: 0 0 20px;
+  font-weight: 600;
+  font-size: 27px;
+}
+#Login .container__login form {
+  display: flex;
+  flex-direction: column;
+}
+#Login .container__login form input {
+  padding: 12px;
+  font-family: "Nunito", sans-serif;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+  font-size: 15px;
+  margin-top: 10px;
+}
+#Login .container__login form button {
+  background: #0a53be;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+#Login .container__login form .down__span {
+  font-size: 12px;
+  color: black;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=Login.css.map */

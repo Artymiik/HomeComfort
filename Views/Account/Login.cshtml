@@ -1,0 +1,32 @@
+﻿@model HomeComfort.ViewModel.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<head>
+    <link rel="stylesheet" href="@Url.Content("~/css/Login/Login.css")">
+</head>
+
+<section id="Login">
+    <div class="container__login">
+        <p class="title__login">Login</p>
+        
+        <form action="Login" method="post">
+
+            @if (TempData["Error"] != null)
+            {
+                <div class="text-danger-top">Sorry! - @TempData["Error"]</div>
+            }
+            
+            <input asp-for="Email" type="email" placeholder="Your e-mail">
+            <span asp-validation-for="Email" class="text-danger"></span>
+            
+            <input asp-for="Password" type="password" placeholder="Your password">
+            <span asp-validation-for="Password" class="text-danger"></span>
+            
+            <button>Login</button>
+            <span class="down__span">Don't have account yet - <a asp-controller="Account" asp-action="Register">Registration</a></span>
+        </form>
+    </div>
+</section>

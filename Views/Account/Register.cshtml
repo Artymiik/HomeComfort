@@ -1,0 +1,39 @@
+﻿@model HomeComfort.ViewModel.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<head>
+    <link rel="stylesheet" href="@Url.Content("~/css/Register/Register.css")">
+</head>
+
+<section id="Register">
+    <div class="container__register">
+        <p class="title__register">Registration</p>
+        <form asp-action="Register" method="post">
+            
+            @if (TempData["Error"] != null)
+            {
+                <div class="text-danger-top">Sorry! - @TempData["Error"]</div>
+            }
+            
+            <div class="flex__input">
+                <div class="input__danger">
+                    <input asp-for="Name" type="text" placeholder="Your name">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="input__danger">
+                    <input asp-for="Fname" type="text" placeholder="Your fname">
+                    <span asp-validation-for="Fname" class="text-danger"></span>
+                </div>
+            </div>
+            <input asp-for="Email" type="email" placeholder="Your e-mail">
+            <span asp-validation-for="Email" class="text-danger"></span>
+            <input asp-for="Password" type="password" placeholder="Your password">
+            <span asp-validation-for="Password" class="text-danger"></span>
+            <button>Register</button>
+            <span class="down__span">You have account yet - <a asp-controller="Account" asp-action="Login">Login</a></span>
+        </form>
+    </div>
+</section>
