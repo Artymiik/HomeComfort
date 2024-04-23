@@ -1,0 +1,82 @@
+body {
+  background: #F5F5F5;
+}
+
+#CApplication {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+#CApplication .form__create__application h3 {
+  font-size: 22px;
+}
+#CApplication .form__create__application .container__form {
+  background: #ffffff;
+  width: 600px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  padding-bottom: 30px;
+}
+#CApplication .form__create__application .container__form form .title__input {
+  font-size: 11px;
+  margin: 20px 0 8px;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "Nunito", sans-serif;
+}
+#CApplication .form__create__application .container__form form input, #CApplication .form__create__application .container__form form textarea {
+  outline: none;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 9px;
+  width: 96%;
+  font-family: "Nunito", sans-serif;
+  resize: none;
+}
+#CApplication .form__create__application .container__form form textarea {
+  height: 100px;
+  background: rgba(0, 0, 0, 0.07);
+}
+#CApplication .form__create__application .container__form form select {
+  border-radius: 9px;
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+}
+#CApplication .form__create__application .container__form form .title_desc__create {
+  font-weight: 700;
+  font-size: 14px;
+  margin: 20px 0;
+}
+#CApplication .form__create__application .container__form form .flex__address__input {
+  display: flex;
+  align-items: center;
+}
+#CApplication .form__create__application .container__form form .flex__address__input input {
+  background: rgba(0, 0, 0, 0.07);
+  color: #000;
+}
+#CApplication .form__create__application .container__form form .flex__address__input input::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+#CApplication .form__create__application .container__form form .flex__address__input input:nth-child(1) {
+  margin-right: 10px;
+}
+#CApplication .form__create__application .container__form form button {
+  background: #0a53be;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 17px;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  font-family: "Nunito", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=CreateApplication.css.map */

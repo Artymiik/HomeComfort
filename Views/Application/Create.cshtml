@@ -1,23 +1,56 @@
-﻿@{
+﻿@using HomeComfort.Data.Enum
+
+@model HomeComfort.ViewModel.CApplicationViewModel
+@{
     ViewData["Title"] = "Create";
 }
 
 <head>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="~/css/Application/CreateApplication.css">
+    <link rel="stylesheet" href="~/css/Shared/Header.css">
 </head>
 
 <header>
     @await Html.PartialAsync("Home/_header");
 </header>
 
-<div class="form__create__application">
-    <form asp-action="Create" method="post">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-    </form>
-</div>
+<section id="CApplication">
+    <div class="form__create__application">
+        <h3>New Application</h3>
+        <div class="container__form">
+            <form asp-action="Create" method="post">
+                <p class="title_desc__create">Title & Description</p>
+                <p class="title__input">Title application</p>
+                <input asp-for="Title" type="text">
+                <span asp-validation-for="Title" class="text-danger"></span>
+
+                <p class="title__input">Description</p>
+                <textarea asp-for="Description" cols="30" rows="10"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+
+                <p class="title__input">Address</p>
+                <div class="flex__address__input">
+                    <input asp-for="Address.Entrance" type="text" placeholder="Optional">
+                    <span asp-validation-for="Address.Entrance" class="text-danger"></span>
+
+                    <input asp-for="Address.Floor" type="text" placeholder="Optional">
+                    <span asp-validation-for="Address.Floor" class="text-danger"></span>
+                </div>
+
+                <p class="title__input">Priority</p>
+                <select asp-for="Priority" asp-items="@Html.GetEnumSelectList<Priority>()">
+                    <option>--Priority--</option>
+                </select>
+                <span asp-validation-for="Priority" class="text-danger"></span>
+
+                <p class="title__input">Category</p>
+                <select asp-for="Category" asp-items="@Html.GetEnumSelectList<Category>()">
+                    <option>--Category--</option>
+                </select>
+                <span asp-validation-for="Category" class="text-danger"></span>
+
+                <button>Create</button>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,79 @@
+header {
+  position: fixed;
+  display: flex;
+}
+header .left__bar {
+  background: #fff;
+  height: 94vh;
+  padding: 20px 20px;
+  border-right: 1px solid #F5F5F5;
+}
+header .left__bar .title__top__bar {
+  margin: 10px 0 8vh 5px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+header .left__bar .home, header .left__bar .profile, header .left__bar .create, header .left__bar .applications {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  background: #F5F5F5;
+  padding: 6px 14px;
+  border-radius: 10px;
+  box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  color: #3b3b3b;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 200px;
+}
+header .left__bar .home svg, header .left__bar .profile svg, header .left__bar .create svg, header .left__bar .applications svg {
+  width: 15px;
+  margin-right: 10px;
+}
+header .left__bar .active {
+  color: #000000;
+  font-weight: 500;
+}
+header .left__bar .logout {
+  color: red;
+  font-size: 13px;
+  position: absolute;
+  bottom: 20px;
+  text-decoration: none;
+  left: 7%;
+}
+header .top__bar {
+  background: #ffffff;
+  width: 80vw;
+  height: 8vh;
+  border-bottom: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 30px;
+}
+header .top__bar a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background: #0a53be;
+  padding: 6px 15px;
+  border-radius: 11px;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  margin-right: 20px;
+}
+header .top__bar a svg {
+  width: 19px;
+  margin-right: 10px;
+}
+header .top__bar img {
+  display: flex;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=Header.css.map */
