@@ -28,7 +28,8 @@ public class ApplicationRepository : IApplicationRepository
 
     public async Task<IEnumerable<Applications>> GetAll()
     {
-        return await _context.Applications.ToListAsync();
+        /*return await _context.Applications.ToListAsync();*/
+        return await _context.Applications.OrderByDescending(r => r.CreatedAt).ToListAsync();
     }
 
     public async Task<Applications> GetByIdAsync(int id)

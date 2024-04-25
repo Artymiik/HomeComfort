@@ -1,6 +1,7 @@
 header {
   position: fixed;
   display: flex;
+  z-index: 999;
 }
 header .left__bar {
   background: #fff;

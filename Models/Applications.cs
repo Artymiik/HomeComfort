@@ -17,12 +17,16 @@ public class Applications
     public Category Category { get; set; }
     
     public int? Support_like { get; set; }
+    public DateTime? CreatedAt { get; set; }
 
     [ForeignKey("AppUser")]
     public string? AppUserId { get; set; }
 
     public Applications()
     {
+        DateTime now = DateTime.Now;
+        
         Support_like = 0;
+        CreatedAt = now;
     }
 }

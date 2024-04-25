@@ -6,6 +6,10 @@ body {
   position: absolute;
   left: 20%;
   top: 10%;
+  margin-bottom: 30px;
+}
+#CApplication .form__create__application {
+  margin-bottom: 30px;
 }
 #CApplication .form__create__application h3 {
   font-size: 22px;

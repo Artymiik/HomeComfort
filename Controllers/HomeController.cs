@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using HomeComfort.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using HomeComfort.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -9,15 +10,18 @@ namespace HomeComfort.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IApplicationRepository _applicationRepository;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IApplicationRepository applicationRepository)
     {
         _logger = logger;
+        _applicationRepository = applicationRepository;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View();
+        IEnumerable<Applications> applicationsEnumerable = await _applicationRepository.GetAll();
+        return View(applicationsEnumerable);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

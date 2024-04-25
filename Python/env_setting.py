@@ -1,0 +1,1 @@
+connection_string = "Driver={SQL Server};Server=ECHIPSCOMPUTER;Database=HomeComfort;Trusted_Connection=Yes;Encrypt=False;TrustServerCertificate=True"
